@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    
+}
 header{
     position: fixed;
     display: flex;
@@ -21,6 +24,21 @@ header{
     padding-right: 10px;
     
 }
+footer{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+}
+footer p{
+    font-size: 8px;
+}
+
 #gtblogo{
     height: 45px;
     width: 45px;
@@ -55,7 +73,8 @@ header #Userlogin{
 #datadiv{
     margin-top: 75.2px;
     border: 1px solid red;
-    height: calc(90vh - 65.2px);
+    height: calc(100vh - 99px);
+    max-height: 100%;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
@@ -105,7 +124,9 @@ cursor: pointer;
     margin-right: 10px;
     border-radius: 5px;
 }
-
+#search:focus{
+    outline: none;
+}
 #searchdiv button{
     height: 25px;
     padding: 4px;
@@ -117,11 +138,38 @@ cursor: pointer;
     cursor: pointer;
     border-radius: 5px;
 }
-.table{
+.tablediv{
     margin-top: 8px;
     max-width: 100%;
     height: calc(100% - 85.3px);
     border: 1px solid blue;
+    border-radius: 10px;
+    padding: 5px;
+}
+#tbouter{
+    overflow: auto;
+    height: 100%;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+}
+th{
+    background-color: rgb(196, 218, 237);
+    border-radius: 10px;
+}
+th,td{
+    padding: 8px;
+}
+tr{
+    white-space: nowrap;
+}
+.Registered,.Certificate{
+padding: 8px;
+border: none;
+background-color: rgb(202, 172, 229);
+border-radius: 25px;
 }
 @media screen and ( max-width: 855px ){
     #navtitle h3{

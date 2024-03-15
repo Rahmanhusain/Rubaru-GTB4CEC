@@ -20,6 +20,9 @@
     </div>
         <div id="Userlogin"><i class="fa-regular fa-user"></i></div>
     </header>
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> copyright developed by Rahman Husain</p>
+    </footer>
     <div id="datadiv">
         <div id="totalandQr">
             <h3>total Registerted Students : 350</h3>
@@ -31,17 +34,40 @@
         <div id="filterandsearch">
             <div id="searchdiv">
                 <input type="search" id="search" name="search" placeholder="Enter Registeration ID">
-                <button id="search">Search</button>
+                <button id="search" onclick="addRow()">Search</button>
             </div>
             <div id="filterdiv">
                 <i class="fa-solid fa-filter"></i>
             </div>
 
         </div>
-        <div class="table">
-            
+        <div class="tablediv">
+            <div id="tbouter">
+            <table id="myTable">
+                <thead>
+                  <tr class="trow">
+                      <th>S.no</th>
+                      <th>Reg. No.</th>
+                      <th>Name</th>
+                      <th>Status</th>
+                      <th>Certficate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="trow">
+                      <td>1</td>
+                      <td>20251</td>
+                      <td>Rahman Husain</td>
+                      <td><button class="Registered">Registerted</button></td>
+                      <td><button class="Certificate">See Certificate</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>
